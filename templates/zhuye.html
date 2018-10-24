@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <title>实时人脸识别检测平台</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="jumbotron">
+			<h3 class="text-center">
+				基于websocket的实时人脸识别系统检测平台
+			</h3>
+			<p class="text-center">
+				<em>该平台是基于Django开发，集成了人脸数据采集模块、人脸检测模块以及人脸检测与识别模块。该平台将本毕设中的工作进行了很好的梳理，并有很强的可拓展性。</em>
+			</p>
+		</div>
+	</div>
+	<div class="row-fluid">
+		<div class="col-sm-4">
+			<img alt="140x140" src="../static/images/caiji.jpg" />
+			<p class="text-center">
+                <br/><br/>
+				<a href="caiji/" >人脸数据采集</a>
+			</p>
+			<p class="text-left">
+				<em>本模块用于采集新的人脸，以便在后续的识别模块中能正确识别。</em>
+			</p>
+		</div>
+		<div class="col-sm-4">
+			<img alt="140x140" src="../static/images/jiance.jpg" />
+			<p class="text-center">
+                <br/><br/>
+				<a href="jiance/"> 人脸检测 </a>
+			</p>
+			<p class="text-left">
+				<em>本模块用于对采集的视频中的人脸进行检测，并用方框将人脸圈出。</em>
+			</p>
+		</div>
+		<div class="col-sm-4">
+			<img alt="140x140" src="../static/images/shibie.jpg" />
+			<p class="text-center">
+                <br/><br/>
+				<a href="shibie/">人脸检测与识别</a>
+			</p>
+			<p>
+				<em>本模块在人脸检测的基础上增加了识别部分。若人脸在数据库中存在，则圈出并标记姓名；若人脸不存在，则显示不认识。</em>
+			</p>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
